@@ -1,0 +1,92 @@
+.char-detail-container {
+	color: $off-black;
+	padding: $xxxl-size $xxl-size;
+
+	.header {
+		font-family: Ropa Sans, sans-serif;
+		font-size: $l-size;
+		margin-bottom: $xl-size;
+		text-align: center;
+
+		@media screen and (max-width: 1440px) {
+			font-size: $ml-size;
+		}
+	}
+
+	.ironman {
+		
+		img {
+			height: 471px;
+			width: 471px;
+
+			@media screen and (max-width: 1440px) {
+				height: 335px;
+				width: 335px;
+			}
+		}
+
+		@media screen and (max-width: 1440px) {
+			margin-bottom: $l-size;
+			text-align: center;
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		max-width: 1280px;
+
+		.features {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-left: $xxl-size;
+
+			.feature {
+				max-width: 302px;
+
+				h3 {
+					font-family: Ropa Sans, sans-serif;
+					font-size: $m-size;
+					font-weight: 400;
+
+					@media screen and (max-width: 1440px) {
+						font-size: $ms-size;
+					}
+				}
+
+				img {
+					height: 52px;
+
+					@media screen and (max-width: 1440px) {
+						height: 40px;
+					}
+				}
+
+				@media screen and (max-width: 1440px) {
+					margin-bottom: $ms-size;
+					max-width: 320px;
+
+					p {
+						font-size: 14px;
+						line-height: 21px;
+					}
+				}
+			}
+
+			@media screen and (max-width: 1440px) {
+				align-items: center;
+				flex-direction: column;
+				margin-left: 0;
+			}
+		}
+
+		@media screen and (max-width: 1440px) {
+			flex-direction: column;
+		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		padding: $l-size $m-size;
+	}
+}

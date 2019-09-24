@@ -1,0 +1,104 @@
+a {
+	color: $white;
+	text-decoration: none;
+}
+
+#hero-container {
+	background: $red;
+	background: linear-gradient(157deg, $red 55%, $orange 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+	color: $white;
+	height: 858px;
+	padding: $xl-size $xxl-size;
+
+	.header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.signin {
+			font-family: Ropa Sans, sans-serif;
+			padding: $s-size $ms-size;
+
+			@media screen and (max-width: 1440px) {
+				font-size: $s-size;
+			}
+		}
+
+		.signup {
+			background-color: #f4bc00;
+			border-radius: 3px;
+			font-family: Ropa Sans, sans-serif;
+			padding: $s-size $l-size;
+
+			@media screen and (max-width: 1440px) {
+				font-size: $s-size;
+				padding: 6px 16px;
+			}
+		}
+	}
+
+	.intro {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	
+		img {
+			margin-right: 75px;
+
+			@media screen and (max-width: 1440px) {
+				margin-top: $m-size;
+			}
+		}
+	
+		.text {
+			font-size: $ml-size;
+			line-height: $l-size;
+			max-width: 707px;
+			padding-top: $xl-size;
+
+			p {
+				margin-bottom: 100px;
+
+				@media screen and (max-width: 1440px) {
+					line-height: 23px;
+					margin-bottom: 25px;
+				}
+			}
+
+			.get-started {
+				background-color: #f4bc00;
+				border-radius: 5px;
+				box-shadow: 2px 3px 4px 0 rgba(255, 255, 255, 0.15);
+				padding: 16px 80px;
+				text-align: center;
+				width: 320px;
+
+				@media screen and (max-width: 1440px) {
+					margin: 0 auto;
+					padding: 8px 40px;
+					width: 200px;
+				}
+			}
+
+			.get-started:hover {
+				background: conic-gradient(from 90deg, $red, $yellow);
+			}
+
+			@media screen and (max-width: 1440px) {
+				font-size: $ms-size;
+				padding-top: 0;
+			}
+		}
+	
+		@media screen and (max-width: 1440px) {
+			align-items: center;
+			flex-direction: column-reverse;
+		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		padding: $l-size $m-size;
+	}
+}
+
